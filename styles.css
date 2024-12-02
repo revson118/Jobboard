@@ -1,0 +1,879 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 50px;
+    background-color: #8da9c6;
+    color: white;
+    padding-top: 30px;
+    position: fixed;
+    height: 100vh;
+    left: 0;
+  }
+  
+  .sidebar-logo {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .sidebar-logo img {
+  height: 53px;
+  margin-left: -9px;
+  
+  }
+  
+  .sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: -29px;
+  }
+  
+   
+  .sidebar nav ul li img{
+    margin: 14px;
+    height: 23px;
+    margin-top:23px ;
+  }
+  
+  .sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .sidebar nav ul li a:hover {
+    background-color: #ccd5de;
+  }
+  
+  /* Main Content */
+  .main-content {
+    margin-left: 250px;
+    padding: 20px;
+    flex: 1;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -20px;
+  }
+  
+  .employee-info {
+    border-radius: 12px;
+    border: 1px solid rgb(196, 187, 187);
+    height: 272px;
+    width: 849px;
+    margin-top: -340px;
+    margin-left: -152px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .employee-photo {
+    width: 170px;
+    height: 190px;
+    border-radius: 50%;
+    margin-left: 20px;
+  }
+  
+  .employee-details h2 {
+    margin-left: 4px;
+  }
+  
+  .attendance-info h3 {
+    margin: 5px 0;
+    color: #333;
+  }
+  
+  /* Announcements Section */
+  /* Announcements Section */
+/* Announcements Section */
+.announcements-section {
+  
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  .announcements-section h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .announcement {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .announcement-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: #aaa;
+    margin-bottom: 5px;
+  }
+  
+  .announcement-time {
+    font-size: 12px;
+    color: #aaa;
+  }
+  
+  .announcement-pin {
+    color: #007bff;
+    font-size: 16px;
+  }
+  
+  .announcement p {
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+  }
+  
+  .announcement-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .announcement-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .fas.fa-thumbtack {
+    color: #007bff;
+    font-size: 16px;
+  }
+  
+  
+  .see-all-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .see-all-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Employee Table Section */
+  .employee-table-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    
+    margin: 322px -229px;
+  }
+  
+  .employee-table-section h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .employee-table {
+    margin-top: -323px;
+    border-radius: 12px;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .employee-table th,
+  .employee-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+    color: black;
+  }
+  
+  .employee-table th {
+    background-color:#e6eaef
+  
+    
+  }
+  .hb{
+    color: rgb(80, 79, 79);
+  }
+  
+  .employee-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .employee-table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .employee-table td .employee-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .employee-table td .employee-photo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+  
+  .status-present {
+    display: inline-block; /* Makes the element fit its content */
+    padding: 4px 12px; /* Adds space inside the badge */
+    font-size: 14px; /* Adjust the font size */
+    color: #28a745; /* Green text color */
+    background-color: #e9f7ef; /* Light green background color */
+    border: 1px solid #28a745; /* Green border */
+    border-radius: 16px; /* Rounded corners */
+    text-align: center; /* Centers text */
+    font-family: Arial, sans-serif; /* Optional: Use a clean font */
+  }
+  
+  
+  .status-absent {
+    display: inline-block; /* Makes the element fit its content */
+    padding: 4px 12px; /* Adds space inside the badge */
+    font-size: 14px; /* Adjust the font size */
+    color: #dc3545; /* Red text color */
+    background-color: #f8d7da; /* Light red background color */
+    border: 1px solid #dc3545; /* Red border */
+    border-radius: 16px; /* Rounded corners */
+    text-align: center; /* Centers text */
+    font-family: Arial, sans-serif; /* Optional: Use a clean font */
+  }
+  
+  /* Announcements Section */
+.announcements {
+  width: 896px;
+  margin-left: -213px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);   
+    margin-top: -347px;
+    border: 1px solid rgb(214, 210, 210);
+  }
+  
+  .announcements h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  
+  .announcement-item {
+    background-color: #f3f5f7;
+    margin: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border: 1px solid rgb(241, 229, 229);
+    border-radius: 14px;
+  
+  }
+  
+  .announcement-item:last-child {
+    border-bottom: none;
+  }
+  
+  .announcement-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+  
+  .announcement-text span {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .announcement-text p {
+    margin: 5px 0 0;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .pin-icon {
+    margin-top: -13px;
+    width: 20px;
+    height: 20px;
+    background-color: #f4f4f9;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .pin-icon:hover {
+    background-color: #1d9b91;
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  .employee-attendance {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .employee-attendance h2 {
+    margin-bottom: 20px;
+  }
+  .see-all {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .see-all:hover {
+    text-decoration: underline;
+  }
+  .menu-icon {
+    margin: -21px 30px;
+    font-size: 18px;
+    color: #999;
+    cursor: pointer;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -35px;
+  }
+  
+  .date-button {
+    height: 34px;
+    border-radius: 9px;
+    background-color: transparent;
+    border: 1px solid rgb(228, 225, 225);
+    font-size: 14px;
+    font-weight: bold;
+    color: #777777;
+    cursor: pointer;
+    margin-left: 671px;
+  }
+  
+  .date-button:hover {
+    text-decoration: underline;
+  }
+  
+  /* Employee Stats Boxes */
+  .employee-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .employee-stat-card {
+    flex: 1;
+    margin: 0 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .employee-stat-card h3 {
+    font-size: 22px;
+    color: #333;
+  }
+  
+  .employee-stat-card p {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  /* Specific Colors for Boxes */
+  .employee-stat-card.total-workforce h3 {
+    color: #1d9b91;
+  }
+  
+  .employee-stat-card.present h3 {
+    color: #1d9b91;
+  }
+  
+  .employee-stat-card.absent h3 {
+    color: #ff6b6b;
+  }
+  
+  .employee-stat-card.late-arrivals h3,
+  .employee-stat-card.on-leave h3,
+  .employee-stat-card.wfh h3 {
+    color: #ffa500;
+  }
+  /* Employee Attendance Section */
+.employee-attendance-section {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.employee-attendance-section h4 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.attendance-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.attendance-box {
+  flex: 1;
+  height: 153px;
+  width: 212px;
+  background-color: #fff;
+  padding: 15px;
+  margin: 0 10px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgb(241, 229, 229);
+}
+
+.attendance-box p {
+  font-size: 14px;
+  color: #666;
+  margin: 49px;
+}
+
+.attendance-box h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+/* Ensure the first and last boxes align properly */
+.attendance-row .attendance-box:first-child {
+  margin-left: 0;
+}
+
+.attendance-row .attendance-box:last-child {
+  margin-right: 0;
+}
+
+.att-row{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -114px;
+}
+.t3{
+  height: 245px;
+  width: 223px;
+  flex: 1;
+  background-color: #fff;
+  padding: 9px;
+  margin: 34px 10px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgb(241, 229, 229);
+}
+
+.raw2{
+  margin: -60px 45px;
+}
+h4{
+  margin: 91px 54px;
+  font-size: 29px;
+}
+h5{
+  margin:23px 45px;
+  padding: 23px;
+}
+
+.rw{
+  margin-top: 23px;
+}
+
+.rs{
+  font-size: large;
+  margin-left: -131px;
+  color: rgb(105, 103, 103);
+}
+.fg{
+  margin-top: 623px;
+}
+.head{
+  margin-top: 723px;
+}
+.ed{
+  background-color: rgb(143, 197, 61);
+  color: white;
+  border: none;
+  width: 55px;
+  height: 27px;
+  border-radius: 6px;
+  margin:23px -1px;
+  cursor: pointer;
+}
+.bl{
+  display: inline-block; /* Makes the element fit its content */
+  padding: 4px 12px; /* Adds space inside the badge */
+  font-size: 14px; /* Adjust the font size */
+  color: #007bff; /* Blue text color */
+  background-color: #e7f3ff; /* Light blue background color */
+  border: 1px solid #007bff; /* Blue border */
+  border-radius: 16px; /* Rounded corners */
+  text-align: center; /* Centers text */
+  font-family: Arial, sans-serif; /* Optional: Use a clean font */
+}
+.tt{
+  font-size: 78px;
+}
+
+.r5{
+  margin-left: -121px;
+
+  font-size: 31px;
+}
+.att{
+  color: yellowgreen;
+  font-size: 25px;
+  margin-left: -147px;
+}
+.rt{
+  font-size: 25px;
+  color: rgb(105, 103, 103);
+}
+.attendance-box img{
+  
+  height: 23px;
+}
+.attendance-info{
+  margin-top: 23px;
+}
+
+.pq{
+  font-size: large;
+  margin: 23px 34px;
+  color: rgb(105, 103, 103);
+}
+.pl{
+  font-size: large;
+  margin-left: -129px;
+  color: rgb(105, 103, 103);
+}
+.pk{
+  font-size: larger;
+  margin-left: -129px;
+  color: rgb(105, 103, 103);
+}
+.pz{
+  font-size: large;
+  margin-left: -47px;
+  color: rgb(105, 103, 103);
+}
+.at9{
+  color: yellowgreen;
+  margin-left: 217px;
+}
+.rc{
+  font-size: large;
+  margin-left: -49px;
+  color: rgb(105, 103, 103);
+}
+.pj{
+  font-size: large;
+  margin-left: -142px;
+  color: rgb(105, 103, 103);
+}
+.employee-name1 img{
+  height: 33px;
+margin-left: -6px;
+}
+
+.employee-name2 img{
+  height: 33px;
+  margin-left: 23px;
+}
+.pc{
+  margin-top: 23px;
+}
+.ll{
+  font-size: 20px;
+   color: rgb(161, 159, 159);
+}
+
+.cc{
+  margin-left: 23px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.btn{
+  margin: 23px 34px;
+}
+.employee-details{
+  margin-left: 28px;
+}
+.ff{
+  width: 265px;
+  cursor: pointer;
+  border-radius: 7px;
+  border: 1px solid rgb(208, 204, 204);
+  background-color: #fff;
+  height: 34px;
+  margin-top: 23px;
+  margin-left: -1589px;
+}
+.ff img{
+  height: 15px;
+}
+
+.kk img{
+  height: 15px;
+}
+.kk{
+  margin-top: 23px;
+  border-radius: 7px;
+  height: 37px;
+  width: 127px;
+  margin-left: 23px;
+  border: 1px solid rgb(208, 204, 204);
+  background-color: #fff;
+}
+.cs{
+  margin-top: 23px;
+  border-radius: 7px;
+  height: 33px;
+  width: 90px;
+  margin-left: 23px;
+  border: 1px solid rgb(208, 204, 204);
+  background-color: #fff;
+}
+.dd{
+  margin-top: 29px;
+  border-radius: 7px;
+  height: 33px;
+  width: 90px;
+  margin-left: -253px;
+  border: 1px solid rgb(208, 204, 204);
+  background-color: #fff;
+}
+.v2{
+  margin-top: -73px;
+}
+/* General Styles remain unchanged */
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+  /* Sidebar adjustments */
+  .sidebar {
+    width: 40px;
+  }
+  
+  .sidebar-logo img {
+    height: 40px;
+  }
+  
+  .sidebar nav ul li img {
+    margin: 10px;
+    height: 20px;
+  }
+  
+  .main-content {
+    margin-left: 150px;
+    padding: 15px;
+  }
+  
+  .employee-info {
+    width: 100%;
+    margin-left: 0;
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .employee-photo {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+  }
+
+  .employee-details {
+    text-align: center;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  /* Reduce the sidebar further */
+  .sidebar {
+    display: none;
+  }
+
+  .main-content {
+    margin-left: 0;
+  }
+
+  .employee-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .announcements {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .employee-table-section {
+    margin: 20px 0;
+  }
+
+  .attendance-box {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .attendance-row {
+    flex-direction: column;
+  }
+
+  .employee-table {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Stack elements for smaller screens */
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .employee-info {
+    width: 100%;
+  }
+
+  .employee-photo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .announcements {
+    width: 100%;
+  }
+
+  .announcement-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .attendance-box h3 {
+    font-size: 16px;
+  }
+
+  .employee-stats {
+    flex-direction: column;
+  }
+
+  .employee-stat-card {
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* Mobile view */
+  body {
+    flex-direction: column;
+  }
+
+  .main-content {
+    padding: 10px;
+  }
+
+  .employee-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .announcements {
+    padding: 10px;
+  }
+
+  .announcement-item {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .employee-table th,
+  .employee-table td {
+    font-size: 10px;
+    padding: 8px;
+  }
+
+  .attendance-box {
+    margin: 10px auto;
+    width: 100%;
+  }
+
+  .attendance-box h3 {
+    font-size: 14px;
+  }
+}
+
+/* Add styles for extra-small devices */
+@media screen and (max-width: 400px) {
+  .employee-details h2 {
+    font-size: 18px;
+  }
+
+  .employee-photo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .employee-stats {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .employee-stat-card {
+    margin: 10px 0;
+  }
+
+  .announcement p {
+    font-size: 12px;
+  }
+
+  .attendance-box {
+    padding: 10px;
+  }
+
+  .attendance-box h3 {
+    font-size: 12px;
+  }
+}
